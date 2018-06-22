@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context="amazon.jy.com.amazon.ui.CartActivity">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <include layout="@layout/logo_title"/>
+        <LinearLayout
+            android:id="@+id/price_linear"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+            <TextView
+                android:textSize="24dp"
+                android:layout_marginLeft="16dp"
+                android:gravity="center"
+                android:text="@string/total"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp" />
+            <TextView
+                android:id="@+id/total_price"
+                android:textColor="@color/colorRed"
+                android:gravity="center_vertical"
+                android:textSize="24dp"
+                android:text="@string/cart_price"
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+        </LinearLayout>
+        <Button
+            android:id="@+id/settlement"
+            android:textSize="18dp"
+            android:text="@string/to_settlement"
+            android:layout_margin="16dp"
+            android:background="@drawable/login_shap"
+            android:layout_width="match_parent"
+            android:layout_height="48dp" />
+        <ListView
+            android:id="@+id/cart_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </ListView>
+
+
+    </LinearLayout>
+
+</ScrollView>

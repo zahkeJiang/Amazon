@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="amazon.jy.com.amazon.ui.OrderDetailActivity">
+    <include layout="@layout/logo_title" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/to_order_detail_text"
+                    android:layout_marginLeft="16dp"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/colorDark"
+                    android:textSize="16dp"
+                    android:text="@string/order_detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp" />
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_margin="16dp"
+                    android:background="@drawable/shap"
+                    android:layout_width="match_parent"
+                    android:layout_height="154dp">
+                    <LinearLayout
+                        android:layout_marginTop="16dp"
+                        android:layout_marginLeft="16dp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:textColor="@color/colorDark"
+                            android:gravity="center_vertical"
+                            android:text="@string/order_num"
+                            android:layout_width="80dp"
+                            android:layout_height="match_parent" />
+                        <TextView
+                            android:id="@+id/order_number"
+                            android:gravity="center_vertical"
+                            android:text="@string/no_data"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_marginTop="8dp"
+                        android:layout_marginLeft="16dp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:textColor="@color/colorDark"
+                            android:gravity="center_vertical"
+                            android:text="@string/order_date"
+                            android:layout_width="80dp"
+                            android:layout_height="match_parent" />
+                        <TextView
+                            android:id="@+id/order_date"
+                            android:gravity="center_vertical"
+                            android:text="@string/no_data"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_marginTop="8dp"
+                        android:layout_marginLeft="16dp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:textColor="@color/colorDark"
+                            android:gravity="center_vertical"
+                            android:text="@string/order_price"
+                            android:layout_width="80dp"
+                            android:layout_height="match_parent" />
+                        <TextView
+                            android:id="@+id/order_price"
+                            android:gravity="center_vertical"
+                            android:text="@string/no_data"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_marginTop="8dp"
+                        android:layout_marginLeft="16dp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:textColor="@color/colorDark"
+                            android:gravity="center_vertical"
+                            android:text="@string/order_status"
+                            android:layout_width="80dp"
+                            android:layout_height="match_parent" />
+                        <TextView
+                            android:id="@+id/order_status"
+                            android:gravity="center_vertical"
+                            android:text="@string/no_data"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_marginTop="8dp"
+                        android:layout_marginLeft="16dp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:textColor="@color/colorDark"
+                            android:gravity="center_vertical"
+                            android:text="@string/pay_type"
+                            android:layout_width="80dp"
+                            android:layout_height="match_parent" />
+                        <TextView
+                            android:id="@+id/pay_type"
+                            android:gravity="center_vertical"
+                            android:text="@string/no_data"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_marginBottom="16dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginLeft="16dp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:textColor="@color/colorDark"
+                            android:gravity="center_vertical"
+                            android:text="@string/uInvoiceTitle"
+                            android:layout_width="80dp"
+                            android:layout_height="match_parent" />
+                        <TextView
+                            android:id="@+id/uInvoiceTitle"
+                            android:gravity="center_vertical"
+                            android:text="@string/no_data"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent" />
+                    </LinearLayout>
+                </LinearLayout>
+                <TextView
+                    android:layout_marginLeft="16dp"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/colorDark"
+                    android:textSize="16dp"
+                    android:text="@string/book_detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_margin="16dp"
+                    android:background="@drawable/shap"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ListView
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="16dp"
+                        android:id="@+id/book_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                    </ListView>
+                </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

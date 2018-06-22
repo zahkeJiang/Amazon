@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorGrey"
+    tools:context="amazon.jy.com.amazon.ui.SettlementActivity">
+    <include layout="@layout/logo_title"/>
+    <TextView
+        android:textStyle="bold"
+        android:textColor="@color/colorDark"
+        android:textSize="20dp"
+        android:layout_marginLeft="16dp"
+        android:gravity="center_vertical"
+        android:text="@string/select_address"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@drawable/shap"
+        android:layout_margin="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_marginLeft="16dp"
+                android:src="@drawable/check"
+                android:layout_width="44dp"
+                android:layout_height="match_parent" />
+            <LinearLayout
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="8dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_marginTop="8dp"
+                    android:id="@+id/user_name"
+                    android:layout_marginLeft="8dp"
+                    android:gravity="center_vertical"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorDark"
+                    android:textSize="18dp"
+                    android:text="@string/no_data"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/address"
+                    android:layout_marginLeft="8dp"
+                    android:gravity="center_vertical"
+                    android:textStyle="bold"
+                    android:textSize="18dp"
+                    android:text="@string/no_data"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/address_detail"
+                    android:layout_marginLeft="8dp"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/colorDark"
+                    android:textSize="18dp"
+                    android:text="@string/no_data"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/zip_code"
+                    android:layout_marginLeft="8dp"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/colorDark"
+                    android:textSize="18dp"
+                    android:text="@string/no_data"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_marginBottom="8dp"
+                    android:id="@+id/phone"
+                    android:layout_marginLeft="8dp"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/colorDark"
+                    android:textSize="18dp"
+                    android:text="@string/no_data"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+        <Button
+            android:id="@+id/to_pay"
+            android:text="@string/to_pay"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_width="match_parent"
+            android:background="@drawable/login_shap"
+            android:layout_height="48dp" />
+        <LinearLayout
+            android:layout_marginBottom="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <Button
+                android:id="@+id/edit_address"
+                android:layout_weight="1"
+                android:text="@string/edit"
+                android:layout_marginTop="9dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_width="match_parent"
+                android:background="@drawable/shap"
+                android:layout_height="48dp" />
+            <Button
+                android:id="@+id/delete_address"
+                android:layout_weight="1"
+                android:text="@string/delete"
+                android:layout_marginTop="9dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_width="match_parent"
+                android:background="@drawable/shap"
+                android:layout_height="48dp" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/address_id"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

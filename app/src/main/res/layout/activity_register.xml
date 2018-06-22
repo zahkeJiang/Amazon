@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <include layout="@layout/logo_title"/>
+    <TextView
+        android:textColor="@color/colorDark"
+        android:layout_marginLeft="16dp"
+        android:gravity="center_vertical"
+        android:textSize="26dp"
+        android:textStyle="bold"
+        android:text="@string/create_account"
+        android:layout_width="match_parent"
+        android:layout_height="48dp" />
+    <EditText
+        android:id="@+id/real_name"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:paddingLeft="16dp"
+        android:hint="@string/real_name"
+        android:background="@drawable/new_account_shap"
+        android:layout_width="match_parent"
+        android:layout_height="48dp" />
+    <EditText
+        android:id="@+id/phone"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:paddingLeft="16dp"
+        android:hint="@string/your_phone"
+        android:background="@drawable/new_account_shap"
+        android:layout_width="match_parent"
+        android:layout_height="48dp" />
+    <EditText
+        android:id="@+id/password"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:paddingLeft="16dp"
+        android:inputType="textPassword"
+        android:hint="@string/create_password"
+        android:background="@drawable/new_account_shap"
+        android:layout_width="match_parent"
+        android:layout_height="48dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:layout_height="64dp">
+        <CheckBox
+            android:id="@+id/show_pass"
+            android:inputType="textPassword"
+            android:layout_marginLeft="16dp"
+            android:layout_width="wrap_content"
+            android:background="@drawable/edit_password"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginLeft="8dp"
+            android:textSize="18dp"
+            android:text="@string/show_pass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <Button
+        android:id="@+id/create_new"
+        android:text="@string/create_new_account"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:textSize="18dp"
+        android:background="@drawable/login_shap"
+        android:layout_width="match_parent"
+        android:layout_height="46dp" />
+    <LinearLayout
+        android:layout_marginTop="8dp"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <View
+            android:layout_marginLeft="16dp"
+            android:layout_weight="1"
+            android:background="@color/colorDeepGrey"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"/>
+        <TextView
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:text="@string/has_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_marginRight="16dp"
+            android:layout_weight="1"
+            android:background="@color/colorDeepGrey"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"/>
+    </LinearLayout>
+    <Button
+        android:id="@+id/to_login"
+        android:text="@string/login_now"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:textSize="18dp"
+        android:background="@drawable/new_account_shap"
+        android:layout_width="match_parent"
+        android:layout_height="46dp" />
+</LinearLayout>

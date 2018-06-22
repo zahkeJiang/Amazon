@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="amazon.jy.com.amazon.ui.PayResultActivity">
+    <include layout="@layout/logo_title"/>
+    <ImageView
+        android:layout_marginTop="16dp"
+        android:paddingTop="16dp"
+        android:src="@drawable/pay_success"
+        android:layout_width="match_parent"
+        android:layout_height="100dp" />
+    <TextView
+        android:textColor="@color/colorDark"
+        android:textSize="24dp"
+        android:gravity="center"
+        android:text="@string/pay_success"
+        android:layout_width="match_parent"
+        android:layout_height="100dp" />
+    <Button
+        android:id="@+id/to_order_detail"
+        android:text="@string/to_check"
+        android:background="@drawable/login_shap"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="48dp" />
+</LinearLayout>

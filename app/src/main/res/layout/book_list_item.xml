@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+    <View
+        android:background="@color/colorDeepGrey"
+        android:layout_width="0.5dp"
+        android:layout_height="match_parent"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/text_b_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_gravity="center"
+            android:id="@+id/book_cover"
+            android:layout_marginTop="16dp"
+            android:src="@mipmap/book"
+            android:layout_width="match_parent"
+            android:layout_height="130dp" />
+        <TextView
+            android:id="@+id/book_name"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            android:maxLines="2"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:gravity="center_vertical"
+            android:text="@string/book_name"
+            android:layout_width="match_parent"
+            android:layout_height="32dp" />
+        <LinearLayout
+            android:layout_marginLeft="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+            <TextView
+                android:gravity="center_vertical"
+                android:textSize="16dp"
+                android:text="@string/RMB"
+                android:textColor="@color/colorRed"
+                android:layout_width="15dp"
+                android:layout_height="match_parent" />
+            <TextView
+                android:layout_marginLeft="8dp"
+                android:id="@+id/book_price"
+                android:textColor="@color/colorRed"
+                android:textSize="16dp"
+                android:gravity="center_vertical"
+                android:text="26.7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <RatingBar
+            android:id="@+id/rating_star"
+            android:layout_marginLeft="16dp"
+            style="?android:attr/ratingBarStyleSmall"
+            android:rating="3"
+            android:clickable="false"
+            android:numStars="5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:theme="@style/RatingBar"/>
+        <View
+            android:background="@color/colorDeepGrey"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"/>
+    </LinearLayout>
+
+</LinearLayout>

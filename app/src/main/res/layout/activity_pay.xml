@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="amazon.jy.com.amazon.ui.PayActivity">
+    <include layout="@layout/logo_title"/>
+    <TextView
+        android:textColor="@color/colorDark"
+        android:textStyle="bold"
+        android:gravity="center_vertical"
+        android:textSize="20dp"
+        android:layout_marginLeft="16dp"
+        android:text="@string/choose_pay"
+        android:layout_width="match_parent"
+        android:layout_height="48dp" />
+    <RadioGroup
+        android:id="@+id/radio"
+        android:background="@drawable/shap"
+        android:layout_margin="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:layout_margin="16dp"
+            android:text="@string/alipay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <View
+            android:background="@color/colorGrey"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+        <RadioButton
+            android:layout_margin="16dp"
+            android:text="@string/wechat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <View
+            android:background="@color/colorGrey"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+        <RadioButton
+            android:layout_margin="16dp"
+            android:text="@string/jd_pay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+        <TextView
+            android:textSize="16dp"
+            android:text="@string/invoice_type"
+            android:layout_marginLeft="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Spinner
+            android:id="@+id/invoice_type"
+            android:entries="@array/invoice_type"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </Spinner>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_margin="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+        <TextView
+            android:layout_marginLeft="16dp"
+            android:text="@string/invoice_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/invoice_title"
+            android:layout_marginLeft="3dp"
+            android:background="@drawable/new_account_shap"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <TextView
+        android:gravity="center_vertical"
+        android:text="@string/deliver_fee"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="48dp" />
+    <Button
+        android:id="@+id/ensure_pay"
+        android:text="@string/ensure_pay"
+        android:background="@drawable/login_shap"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="48dp" />
+
+</LinearLayout>

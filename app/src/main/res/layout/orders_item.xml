@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="144dp">
+        <ImageView
+            android:layout_marginLeft="16dp"
+            android:id="@+id/book_cover"
+            android:src="@mipmap/book"
+            android:layout_width="104dp"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:maxLines="2"
+                android:id="@+id/book_name"
+                android:textStyle="bold"
+                android:textColor="@color/colorDark"
+                android:textSize="18dp"
+                android:layout_marginRight="32dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:text="324356435656432444456754321343567687564354"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <LinearLayout
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="16dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textSize="16dp"
+                    android:text="@string/amount"
+                    android:layout_width="44dp"
+                    android:layout_height="match_parent" />
+                <TextView
+                    android:textSize="16dp"
+                    android:id="@+id/quantity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/b_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <TextView
+            android:textColor="@color/colorRed"
+            android:id="@+id/price"
+            android:textSize="16dp"
+            android:layout_marginRight="16dp"
+            android:text="@string/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>

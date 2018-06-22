@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="amazon.jy.com.amazon.ui.EditUserActivity">
+    <include layout="@layout/logo_title"/>
+    <TextView
+        android:gravity="center_vertical"
+        android:layout_marginLeft="16dp"
+        android:textColor="@color/colorDark"
+        android:textStyle="bold"
+        android:textSize="24dp"
+        android:text="@string/edit_user"
+        android:layout_width="match_parent"
+        android:layout_height="48dp" />
+    <EditText
+        android:id="@+id/real_name"
+        android:layout_marginTop="8dp"
+        android:paddingLeft="8dp"
+        android:background="@drawable/shap"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:hint="@string/name_hint"
+        android:layout_width="match_parent"
+        android:layout_height="48dp" />
+    <EditText
+        android:id="@+id/account_num"
+        android:layout_marginTop="16dp"
+        android:paddingLeft="8dp"
+        android:background="@drawable/shap"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:hint="@string/account_hint"
+        android:layout_width="match_parent"
+        android:layout_height="48dp" />
+    <EditText
+        android:id="@+id/nickname"
+        android:layout_marginTop="16dp"
+        android:paddingLeft="8dp"
+        android:background="@drawable/shap"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:hint="@string/nickname_hint"
+        android:layout_width="match_parent"
+        android:layout_height="48dp" />
+    <EditText
+        android:id="@+id/QQ_num"
+        android:layout_marginTop="16dp"
+        android:paddingLeft="8dp"
+        android:background="@drawable/shap"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:hint="@string/QQ_num"
+        android:layout_width="match_parent"
+        android:layout_height="48dp" />
+    <Spinner
+        android:id="@+id/sex"
+        android:background="@drawable/shap"
+        android:layout_marginTop="16dp"
+        android:entries="@array/sex"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"/>
+
+    <Button
+        android:id="@+id/save"
+        android:text="@string/save"
+        android:background="@drawable/login_shap"
+        android:layout_margin="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="48dp" />
+</LinearLayout>

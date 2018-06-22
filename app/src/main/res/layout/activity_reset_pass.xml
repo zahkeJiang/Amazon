@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/logo_title"/>
+    <TextView
+        android:textStyle="bold"
+        android:textColor="@color/colorDark"
+        android:textSize="20dp"
+        android:layout_marginLeft="16dp"
+        android:gravity="center_vertical"
+        android:text="@string/pass_help"
+        android:layout_width="match_parent"
+        android:layout_height="48dp" />
+    <TextView
+        android:textColor="@color/colorDark"
+        android:layout_margin="16dp"
+        android:text="@string/reset_hint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/password"
+        android:inputType="textPassword"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:paddingLeft="16dp"
+        android:hint="@string/new_pass_hint"
+        android:background="@drawable/new_account_shap"
+        android:layout_width="match_parent"
+        android:layout_height="48dp" />
+    <EditText
+        android:id="@+id/ensure_pass"
+        android:inputType="textPassword"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:paddingLeft="16dp"
+        android:hint="@string/new_pass_hint_again"
+        android:background="@drawable/new_account_shap"
+        android:layout_width="match_parent"
+        android:layout_height="48dp" />
+    <Button
+        android:id="@+id/save_change"
+        android:layout_marginTop="16dp"
+        android:text="@string/save_change"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:textSize="18dp"
+        android:background="@drawable/login_shap"
+        android:layout_width="match_parent"
+        android:layout_height="48dp" />
+    <View
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@color/colorDeepGrey"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"/>
+    <TextView
+        android:textColor="@color/colorDark"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:layout_marginLeft="16dp"
+        android:gravity="center_vertical"
+        android:text="@string/security_pass_hint"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+    <TextView
+        android:textColor="@color/colorDark"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:text="@string/security_pass_hint_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_marginTop="4dp"
+        android:textColor="@color/colorDark"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:text="@string/security_pass_hint_two"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_marginTop="4dp"
+        android:textColor="@color/colorDark"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:text="@string/security_pass_hint_three"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_marginTop="4dp"
+        android:textColor="@color/colorDark"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:text="@string/security_pass_hint_four"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
